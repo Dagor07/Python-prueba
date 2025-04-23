@@ -16,19 +16,22 @@ def numero(valor):
         return False
 
 while True:
-    base = input("Ingresa el primer número (puede ser decimal): ")
+    base = input("Ingresa la base (puede ser decimal): ")
     if not numero(base):
         print("ERROR: Solo se aceptan números (enteros o decimales).")
+        continue
     if float(base) <0:
         print("ERROR: Solo se aceptan números positivos")
         continue
-
-    altura = input("Ingresa el segundo número (puede ser decimal):")
+    break
+while True:
+    altura = input("Ingresa la altura (puede ser decimal):")
     if not numero(altura):
         print("ERROR: Solo se aceptan números (enteros o decimales)")
+        continue
     if float(altura) <0:
         print("ERROR: Solo se aceptan números positivos")
         continue
-        area = float(base) * float(altura)
+    area = float(base) * float(altura)
     print("El área es", area)
     break
