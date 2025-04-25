@@ -20,14 +20,13 @@ def discount():
         except :
             print("Entrada inválida. Ingresa un número válido.")
 
-list {
+
 product = input("Nombre del producto: ")
 price = positive_number("Precio unitario: ")
 amount = positive_number("Cantidad comprada: ")
 discount = discount()
-}
 
-list.append
+
 subtotal = price * amount
 discount = subtotal * (discount / 100)
 total = subtotal - discount
